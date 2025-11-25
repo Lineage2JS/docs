@@ -5,7 +5,7 @@ import { viteBundler } from '@vuepress/bundler-vite'
 export default defineUserConfig({
   base: "/docs/",
   lang: 'en-US',
-  title: 'Lineage 2 server emulator in JavaScript',
+  title: 'Lineage2JS',
   theme: defaultTheme({
     lastUpdated: false,
     contributors: false,
