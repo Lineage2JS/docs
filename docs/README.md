@@ -1,2 +1,1 @@
-
-test
+Lineage2JS docs in progress...
