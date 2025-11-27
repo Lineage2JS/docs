@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as n,a}from"./app-DCx2Wy3C.js";const o={},s=a("p",null,"Lineage2JS docs in progress...",-1),c=[s];function r(_,i){return n(),t("div",null,c)}const d=e(o,[["render",r],["__file","index.html.vue"]]),m=JSON.parse('{"path":"/","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"README.md"}');export{d as comp,m as data};

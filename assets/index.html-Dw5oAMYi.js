@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a,a as n}from"./app-DjbrU6nq.js";const o={},s=n("p",null,"test",-1),c=[s];function r(_,l){return a(),t("div",null,c)}const d=e(o,[["render",r],["__file","index.html.vue"]]),m=JSON.parse('{"path":"/","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"README.md"}');export{d as comp,m as data};
