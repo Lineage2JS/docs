@@ -1,8 +1,4 @@
-FROM debian:stable-slim
-
-RUN apt update && \
-    apt install -y \
-    npm
+FROM node:lts-alpine3.23
 
 WORKDIR /opt/lineage2js-login-server
 

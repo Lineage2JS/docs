@@ -1,8 +1,4 @@
-FROM debian:stable-slim AS builder
-
-RUN apt update && \
-    apt install -y \
-    npm
+FROM node:lts-alpine3.23 AS builder
 
 WORKDIR /opt/lineage2js-web-ui
 
@@ -13,11 +9,7 @@ RUN cd web-ui && \
     npm install && \
     npm run build
 
-FROM debian:stable-slim
-
-RUN apt update && \
-    apt install -y \
-    npm
+FROM node:lts-alpine3.23
 
 WORKDIR /opt/lineage2js-web-server
 

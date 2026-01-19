@@ -3,7 +3,6 @@
 set -e
 
 echo "Downloading files..."
-echo ""
 
 repos=(
   "https://github.com/Lineage2JS/game-server.git"
@@ -30,6 +29,10 @@ echo "Copy l2js files..."
 cp docker/game-server/config/* game-server/config/
 cp docker/login-server/config/* login-server/config/
 cp docker/web-server/server.js web-server/
+
+echo "Download DB-init file..."
+mkdir -p docker/initdb/
+curl -o docker/initdb/l2db.sql https://raw.githubusercontent.com/Lineage2JS/scripts/refs/heads/main/l2db.sql
 
 for module in game-server login-server web-server; do
   docker build -t "${module}:latest" "${module}/"
